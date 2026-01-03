@@ -1,0 +1,183 @@
+  :root {
+            --accent-color: #F9D381;
+            --base-color: #ffffff;
+            --text-color: #2e2b41;
+            --input-color: #f3f0fe;
+            --error-color: #f06272;
+        }
+
+        /* ===== Custom Font ===== */
+        @font-face {
+            font-family: 'Recoleta';
+            src: url("../font/Recoleta-RegularDEMO.otf");
+        }
+
+        /* ===== Form Section Styles ===== */
+        .form-section {
+            background-image: url("../images/far.jpg");
+            background-position: right;
+            background-size: 50%;
+            min-height: 100vh;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+        }
+
+        /* ===== Signup Container ===== */
+        .signup-allrounder {
+            background-color: var(--base-color);
+            width: max(50%, 600px);
+            min-height: 100vh;
+            padding: 10px;
+            border-radius: 0 20px 20px 0;
+            display: flex;
+            flex-direction: column;gap: 10px;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .signup-allrounder h1 {
+            font-size: 3rem;
+            font-weight: 900;
+            text-transform: uppercase;
+            color: var(--text-color);
+            margin-bottom: 20px;
+        }
+
+        /* ===== Form Styles ===== */
+        form {
+            width: min(400px, 100%);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+
+        /* ===== Input Group Styles ===== */
+        form > div {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+
+        form label {
+            flex-shrink: 0;
+            height: 50px;
+            width: 50px;
+            background-color: var(--accent-color);
+            border-radius: 10px 0 0 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: var(--base-color);
+            transition: background-color 150ms ease;
+        }
+
+        form label svg {
+            fill: var(--base-color);
+        }
+
+        form input {
+            box-sizing: border-box;
+            flex-grow: 1;
+            min-width: 0;
+            height: 50px;
+            padding: 1em;
+            border: 2px solid var(--input-color);
+            border-left: none;
+            border-radius: 0 10px 10px 0;
+            background-color: var(--input-color);
+            transition: border-color 150ms ease;
+            font-size: 1rem;
+        }
+
+        form input::placeholder {
+            color: var(--text-color);
+            opacity: 0.6;
+        }
+
+        form input:hover {
+            border-color: var(--accent-color);
+        }
+
+        form input:focus {
+            outline: none;
+            border-color: var(--text-color);
+        }
+
+        div:has(input:focus) > label {
+            background-color: var(--text-color);
+        }
+
+        /* ===== Error State ===== */
+        form div.incorrect label {
+            background-color: var(--error-color);
+        }
+
+        form div.incorrect input {
+            border-color: var(--error-color);
+        }
+
+        /* ===== Submit Button ===== */
+        form button {
+            margin-top: 10px;
+            border: none;
+            border-radius: 1000px;
+            padding: 0.85em 4em;
+            background-color: var(--accent-color);
+            color: var(--base-color);
+            text-transform: uppercase;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background-color 150ms ease;
+        }
+
+        form button:hover {
+            background-color: var(--text-color);
+        }
+
+        form button:focus {
+            outline: 2px solid var(--accent-color);
+            outline-offset: 2px;
+        }
+
+        /* ===== Link Styles ===== */
+        .signup-allrounder p {
+            color: var(--text-color);
+            text-align: center;
+        }
+
+        .signup-allrounder a {
+            text-decoration: none;
+            color: var(--accent-color);
+            font-weight: 600;
+        }
+
+        .signup-allrounder a:hover {
+            text-decoration: underline;
+        }
+
+        /* ===== Responsive Design ===== */
+        @media (max-width: 1000px) {
+            .signup-allrounder {
+                width: min(600px, 100%);
+                border-radius: 0;
+            }
+
+        }
+
+        @media (max-width: 600px) {
+            .signup-allrounder h1 {
+                font-size: 2rem;
+            }
+
+            form {
+                width: 100%;
+                padding: 0 20px;
+            }
+        }
+
+        #error-meassage{
+            color: #f06272;font-size: 12px;
+        }

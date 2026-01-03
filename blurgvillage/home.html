@@ -1,0 +1,473 @@
+</html>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blurgvillage - Vintage Fashion</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/nav.css">
+
+</head>
+
+<body>
+  <header id="header">
+        <nav>
+            <div class="logo">
+                <img src="https://via.placeholder.com/67" alt="Logo">
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#shop">Shop</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#auth">Sign up</a></li>
+            </ul>
+            <div class="nav-actions">
+       <div class="mobile-menu-toggle" id="hamburger">
+    <span></span>
+    <span></span>
+    <span></span>
+</div>
+                
+                <svg id="theme-toggle" xmlns="http://www.w3.org/2000/svg" width="18" height="19" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                    <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
+                </svg>
+             
+                <div class="cart-icon" id="cart">
+                    🛒
+                    <span class="cart-count" id="cartCount">0</span>
+                </div>
+            </div>
+        </nav>
+</header>
+
+<div class="menu-overlay" id="menuOverlay">
+    <ul class="nav-links">
+        <li><a href="home.html">Home</a></li>
+        <li><a href="shop.html">Shop</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="auth.html">Sign up</a></li>
+    </ul>
+</div>
+
+
+    <section class="hero">
+        <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
+
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="images/one.jpeg" alt="Slide 1">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/two.avif" alt="Slide 2">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/three.avif" alt="Slide 3">
+                </div>
+            </div>
+
+        </div>
+        <div class="hero-overlay">
+            <div class="hero-content">
+                <h1>Vintage Fashion</h1>
+                <p>Discover unique pieces from the past</p>
+                <button class="cta-button"
+                    onclick="document.getElementById('shop').scrollIntoView({behavior: 'smooth'})">Shop Now</button>
+            </div>
+        </div>
+    </section>
+    <section class="container">
+        <div class="container">
+            <div class="header">
+                <h1>Support & maintaince</h1>
+                <p>Quality and convenience you can trust</p>
+            </div>
+
+            <div class="benefits">
+                <div class="benefit-item">
+                    <div class="icon">
+                        <svg viewBox="0 0 24 24">
+                            <rect x="1" y="6" width="20" height="12" rx="2" />
+                            <path d="M1 10h20" />
+                            <rect x="6" y="14" width="4" height="2" />
+                        </svg>
+                    </div>
+                    <div class="benefit-title">Free shipping on<br>orders over $75</div>
+                </div>
+
+                <div class="benefit-item">
+                    <div class="icon">
+                        <svg viewBox="0 0 24 24">
+                            <path d="M21 12a9 9 0 1 1-9-9" />
+                            <path d="M12 3v9l4 4" />
+                            <path d="M21 3l-9 9" />
+                        </svg>
+                    </div>
+                    <div class="benefit-title">14-day hassle-<br>free returns</div>
+                </div>
+
+                <div class="benefit-item">
+                    <div class="icon">
+                        <svg viewBox="0 0 24 24">
+                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+                            <path d="M9 12l2 2 4-4" />
+                        </svg>
+                    </div>
+                    <div class="benefit-title">30-day product<br>warranty</div>
+                </div>
+
+                <div class="benefit-item">
+                    <div class="icon">
+                        <svg viewBox="0 0 24 24">
+                            <path d="M3 18v-6a9 9 0 0 1 18 0v6" />
+                            <path
+                                d="M21 19a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3zM3 19a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2H3z" />
+                        </svg>
+                    </div>
+                    <div class="benefit-title">Customer<br>support 24/7</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="categories reveal">
+        <h2 class="section-title">Shop Categorys</h2>
+        <div class="category-grid">
+            <div class="category-card">
+                <img src="images/brand1.jpg" alt="Under 199">
+                <div class="category-overlay">
+                    <h3>Under ₹199</h3>
+                    <p>Affordable vintage finds</p>
+                </div>
+            </div>
+            <div class="category-card">
+                <img src="images/brand2.jpg" alt="Under 199">
+                <div class="category-overlay">
+                    <h3>Under ₹599</h3>
+                    <p>Premium selection</p>
+                </div>
+            </div>
+            <div class="category-card">
+                <img src="images/brand3.jpg" alt="Under 199">
+                <div class="category-overlay">
+                    <h3>Under ₹999</h3>
+                    <p>Exclusive pieces</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="products reveal" id="shop">
+        <h2 class="section-title">Trending Products</h2>
+        <div class="product-grid" id="productGrid"></div>
+    </section>
+    <section class="containesr">
+        <!-- Header -->
+        <div class="reviews-header">
+            <h1><svg xmlns="http://www.w3.org/2000/svg" width="36" height="35" fill="currentColor"
+                    class="bi bi-camera-fill" viewBox="0 0 16 16">
+                    <path d="M10.5 8.5a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0" />
+                    <path
+                        d="M2 4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2h-1.172a2 2 0 0 1-1.414-.586l-.828-.828A2 2 0 0 0 9.172 2H6.828a2 2 0 0 0-1.414.586l-.828.828A2 2 0 0 1 3.172 4zm.5 2a.5.5 0 1 1 0-1 .5.5 0 0 1 0 1m9 2.5a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0" />
+                </svg> Happy Customers</h1>
+            <p>See what our customers are saying about their experience</p>
+        </div>
+
+        <!-- Stats Section -->
+        <div class="stats-container">
+            <div class="star-card">
+                <img src="images/review1.jpg" alt="">
+            </div>
+            <div class="star-card">
+                <img src="images/review2.jpg" alt="">
+            </div>
+            <div class="star-card">
+                <img src="images/review3.jpg" alt="">
+            </div>
+            <div class="star-card">
+                <img src="images/review4.jpg" alt="">
+            </div>
+            <div class="star-card">
+                <img src="images/review5.jpg" alt="">
+            </div>
+            <div class="star-card">
+                <img src="images/review6 (1).jpg" alt="">
+            </div>
+
+
+            <div class="star-card">
+                <img src="images/reviwes999.jpg" alt="">
+            </div>
+            <div class="star-card">
+                <img src="images/review7.jpg" alt="">
+            </div>
+
+            <div class="star-card">
+                <img src="images/review8.jpg" alt="">
+            </div>
+
+
+        </div>
+
+        <!-- Filter Buttons -->
+        <div class="filter-section">
+            <button class="filter-btn active">All Reviews</button>
+            <button class="filter-btn">5 Stars</button>
+            <button class="filter-btn">4 Stars</button>
+            <button class="filter-btn">Verified</button>
+        </div>
+
+        <!-- Featured Review -->
+        <div class="featured-review">
+            <div class="rating">
+                <span class="star">★</span>
+                <span class="star">★</span>
+                <span class="star">★</span>
+                <span class="star">★</span>
+                <span class="star">★</span>
+            </div>
+            <p class="review-text">"Absolutely love my purchase! The quality exceeded my expectations and the delivery
+                was super fast. The customer service team was incredibly helpful when I had questions. I've already
+                recommended Blurgvillage to all my friends and family. Will definitely be shopping here again!"</p>
+            <div class="review-header">
+                <div class="reviewer-avatar"><img src="images/saved1.jpg" alt=""></div>
+                <div class="reviewer-info">
+                    <h3>Sarah Patel</h3>
+                    <p class="reviewer-location">Mumbai, India</p>
+                </div>
+            </div>
+            <span class="review-date">Purchased: Baggy Denim Trousers - 2 weeks ago</span>
+        </div>
+
+        <!-- Reviews Grid -->
+        <div class="reviews-grid">
+            <!-- Review 1 -->
+            <div class="review-card">
+                <div class="review-header">
+                    <div class="reviewer-avatar"><img src="images/saved2.png" alt=""></div>
+                    <div class="reviewer-info">
+                        <h3>Rajesh Kumar</h3>
+                        <p class="reviewer-location">Delhi, India</p>
+                    </div>
+                </div>
+                <div class="rating">
+                    <span class="star">★</span>
+                    <span class="star">★</span>
+                    <span class="star">★</span>
+                    <span class="star">★</span>
+                    <span class="star">★</span>
+                </div>
+                <p class="review-text">Amazing quality! The fabric is so comfortable and the fit is perfect. Delivery
+                    was quick and packaging was excellent. Highly recommend!</p>
+                <span class="product-tag">Cotton T-Shirt</span>
+                <div class="verified-badge">Verified Purchase</div>
+                <p class="review-date">3 days ago</p>
+            </div>
+
+            <!-- Review 2 -->
+            <div class="review-card">
+                <div class="review-header">
+                    <div class="reviewer-avatar"><img src="images/saved5.jpg" alt=""></div>
+                    <div class="reviewer-info">
+                        <h3>Priya Mehta</h3>
+                        <p class="reviewer-location">Bangalore, India</p>
+                    </div>
+                </div>
+                <div class="rating">
+                    <span class="star">★</span>
+                    <span class="star">★</span>
+                    <span class="star">★</span>
+                    <span class="star">★</span>
+                    <span class="star">★</span>
+                </div>
+                <p class="review-text">I've ordered multiple times now and every time I'm impressed! Great customer
+                    service, quality products, and affordable prices. This is my go-to store now.</p>
+                <span class="product-tag">Summer Dress</span>
+                <div class="verified-badge">Verified Purchase</div>
+                <p class="review-date">1 week ago</p>
+            </div>
+
+            <!-- Review 3 -->
+            <div class="review-card">
+                <div class="review-header">
+                    <div class="reviewer-avatar"><img src="images/saved6.jpg" alt=""></div>
+                    <div class="reviewer-info">
+                        <h3>Amit Sharma</h3>
+                        <p class="reviewer-location">Pune, India</p>
+                    </div>
+                </div>
+                <div class="rating">
+                    <span class="star">★</span>
+                    <span class="star">★</span>
+                    <span class="star">★</span>
+                    <span class="star">★</span>
+                    <span class="star">★</span>
+                </div>
+                <p class="review-text">Best online shopping experience! The product arrived exactly as described. The
+                    quality is outstanding and worth every penny. Will buy again!</p>
+                <span class="product-tag">Casual Jacket</span>
+                <div class="verified-badge">Verified Purchase</div>
+                <p class="review-date">5 days ago</p>
+            </div>
+
+            <!-- Review 4 -->
+            <div class="review-card">
+                <div class="review-header">
+                    <div class="reviewer-avatar"><img src="images/saved7.jpg" alt=""></div>
+                    <div class="reviewer-info">
+                        <h3>Neha Kapoor</h3>
+                        <p class="reviewer-location">Hyderabad, India</p>
+                    </div>
+                </div>
+                <div class="rating">
+                    <span class="star">★</span>
+                    <span class="star">★</span>
+                    <span class="star">★</span>
+                    <span class="star">★</span>
+                    <span class="star">★</span>
+                </div>
+                <p class="review-text">Super happy with my purchase! The material is soft and the colors are vibrant.
+                    Shipping was faster than expected. Definitely recommending to friends!</p>
+                <span class="product-tag">Printed Kurta</span>
+                <div class="verified-badge">Verified Purchase</div>
+                <p class="review-date">2 weeks ago</p>
+            </div>
+
+            <!-- Review 5 -->
+            <div class="review-card">
+                <div class="review-header">
+                    <div class="reviewer-avatar"><img src="images/saved8.jpg" alt=""></div>
+                    <div class="reviewer-info">
+                        <h3>Vikram Singh</h3>
+                        <p class="reviewer-location">Jaipur, India</p>
+                    </div>
+                </div>
+                <div class="rating">
+                    <span class="star">★</span>
+                    <span class="star">★</span>
+                    <span class="star">★</span>
+                    <span class="star">★</span>
+                    <span class="star">★</span>
+                </div>
+                <p class="review-text">Excellent service! The product quality is top-notch and customer support was very
+                    responsive. Great value for money. Highly satisfied!</p>
+                <span class="product-tag">Denim Jeans</span>
+                <div class="verified-badge">Verified Purchase</div>
+                <p class="review-date">1 week ago</p>
+            </div>
+
+            <!-- Review 6 -->
+            <div class="review-card">
+                <div class="review-header">
+                    <div class="reviewer-avatar"><img src="images/saved13.png" alt=""></div>
+                    <div class="reviewer-info">
+                        <h3>Ananya Das</h3>
+                        <p class="reviewer-location">Kolkata, India</p>
+                    </div>
+                </div>
+                <div class="rating">
+                    <span class="star">★</span>
+                    <span class="star">★</span>
+                    <span class="star">★</span>
+                    <span class="star">★</span>
+                    <span class="star">★</span>
+                </div>
+                <p class="review-text">Love the trendy designs! Everything fits perfectly and the quality is amazing.
+                    The shopping experience was smooth from start to finish. Will order more!</p>
+                <span class="product-tag">Fashion Accessories</span>
+                <div class="verified-badge">Verified Purchase</div>
+                <p class="review-date">4 days ago</p>
+            </div>
+        </div>
+
+        <!-- Trust Section -->
+        <div class="trust-section">
+            <h2>Why Our Customers Love Us</h2>
+            <div class="trust-badges">
+                <div class="trust-badge">
+                    <div class="trust-badge-icon"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                            fill="currentColor" class="bi bi-truck" viewBox="0 0 16 16">
+                            <path
+                                d="M0 3.5A1.5 1.5 0 0 1 1.5 2h9A1.5 1.5 0 0 1 12 3.5V5h1.02a1.5 1.5 0 0 1 1.17.563l1.481 1.85a1.5 1.5 0 0 1 .329.938V10.5a1.5 1.5 0 0 1-1.5 1.5H14a2 2 0 1 1-4 0H5a2 2 0 1 1-3.998-.085A1.5 1.5 0 0 1 0 10.5zm1.294 7.456A2 2 0 0 1 4.732 11h5.536a2 2 0 0 1 .732-.732V3.5a.5.5 0 0 0-.5-.5h-9a.5.5 0 0 0-.5.5v7a.5.5 0 0 0 .294.456M12 10a2 2 0 0 1 1.732 1h.768a.5.5 0 0 0 .5-.5V8.35a.5.5 0 0 0-.11-.312l-1.48-1.85A.5.5 0 0 0 13.02 6H12zm-9 1a1 1 0 1 0 0 2 1 1 0 0 0 0-2m9 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2" />
+                        </svg></div>
+                    <div class="trust-badge-text">Fast Delivery</div>
+                </div>
+                <div class="trust-badge">
+                    <div class="trust-badge-icon"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                            fill="currentColor" class="bi bi-check" viewBox="0 0 16 16">
+                            <path
+                                d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425z" />
+                        </svg></div>
+                    <div class="trust-badge-text">Quality Products</div>
+                </div>
+                <div class="trust-badge">
+                    <div class="trust-badge-icon">💯</div>
+                    <div class="trust-badge-text">100% Authentic</div>
+                </div>
+                <div class="trust-badge">
+                    <div class="trust-badge-icon"> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                            fill="currentColor" class="bi bi-key-fill" viewBox="0 0 16 16">
+                            <path
+                                d="M3.5 11.5a3.5 3.5 0 1 1 3.163-5H14L15.5 8 14 9.5l-1-1-1 1-1-1-1 1-1-1-1 1H6.663a3.5 3.5 0 0 1-3.163 2M2.5 9a1 1 0 1 0 0-2 1 1 0 0 0 0 2" />
+                        </svg></div>
+                    <div class="trust-badge-text">Secure Checkout</div>
+                </div>
+                <div class="trust-badge">
+                    <div class="trust-badge-icon"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                            fill="currentColor" class="bi bi-cloud-fill" viewBox="0 0 16 16">
+                            <path
+                                d="M4.406 3.342A5.53 5.53 0 0 1 8 2c2.69 0 4.923 2 5.166 4.579C14.758 6.804 16 8.137 16 9.773 16 11.569 14.502 13 12.687 13H3.781C1.708 13 0 11.366 0 9.318c0-1.763 1.266-3.223 2.942-3.593.143-.863.698-1.723 1.464-2.383" />
+                        </svg></div>
+                    <div class="trust-badge-text">24/7 Support</div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="footer-content">
+            <div class="payment-methods">
+                <div class="payment-icon">
+                    <svg viewBox="0 0 64 32">
+                        <path fill="#1A1F71"
+                            d="M10.781 7.688c-0.251-1.283-1.219-1.688-2.344-1.688h-8.376l-0.061 0.405c5.749 1.469 10.469 4.595 12.595 10.501l-1.813-9.219zM13.125 19.688l-0.531-2.781c-1.096-2.907-3.752-5.594-6.752-6.813l4.219 15.939h5.469l8.157-20.032h-5.501l-5.062 13.688zM27.72 26.061l3.248-20.061h-5.187l-3.251 20.061h5.189zM41.875 5.656c-5.125 0-8.717 2.72-8.749 6.624-0.032 2.877 2.563 4.469 4.531 5.439 2.032 0.968 2.688 1.624 2.688 2.499 0 1.344-1.624 1.939-3.093 1.939-2.093 0-3.219-0.251-4.875-1.032l-0.688-0.344-0.719 4.499c1.219 0.563 3.437 1.064 5.781 1.064 5.437 0.032 8.97-2.688 9.032-6.843 0-2.282-1.405-4-4.376-5.439-1.811-0.904-2.904-1.563-2.904-2.499 0-0.843 0.936-1.72 2.968-1.72 1.688-0.029 2.936 0.314 3.875 0.752l0.469 0.248 0.717-4.344c-1.032-0.406-2.656-0.844-4.656-0.844zM55.813 6c-1.251 0-2.189 0.376-2.72 1.688l-7.688 18.374h5.437c0.877-2.467 1.096-3 1.096-3 0.592 0 5.875 0 6.624 0 0 0 0.157 0.688 0.624 3h4.813l-4.187-20.061h-4zM53.405 18.938c0 0 0.437-1.157 2.064-5.594-0.032 0.032 0.437-1.157 0.688-1.907l0.374 1.72c0.968 4.781 1.189 5.781 1.189 5.781-0.813 0-3.283 0-4.315 0z" />
+                    </svg>
+                </div>
+                <div class="payment-icon">
+                    <svg viewBox="0 0 64 32">
+                        <path fill="#5F6368"
+                            d="M30.479 16.275v7.365h-2.337V5.452h6.197a5.603 5.603 0 014.012 1.574 5.062 5.062 0 011.676 3.839 5.037 5.037 0 01-1.676 3.86c-1.083 1.033-2.42 1.55-4.012 1.548h-3.86v.002zm0-8.584v6.35h3.918a3.089 3.089 0 002.312-.941 3.098 3.098 0 000-4.445 3.047 3.047 0 00-2.312-.965h-3.918v.001zM45.41 10.79c1.727 0 3.09.462 4.09 1.385s1.498 2.188 1.498 3.796v7.67h-2.235v-1.727h-.102c-.968 1.422-2.254 2.133-3.86 2.133-1.371 0-2.518-.406-3.441-1.219a3.895 3.895 0 01-1.384-3.047c0-1.288.486-2.312 1.46-3.073.973-.76 2.272-1.141 3.897-1.143 1.388 0 2.53.254 3.428.762v-.534a2.662 2.662 0 00-.965-2.068 3.31 3.31 0 00-2.255-.852c-1.305 0-2.338.55-3.098 1.651l-2.058-1.296c1.132-1.625 2.807-2.438 5.025-2.438zm-3.023 9.041a1.864 1.864 0 00.775 1.524 2.85 2.85 0 001.816.61 3.725 3.725 0 002.628-1.092c.774-.728 1.161-1.583 1.161-2.564-.729-.58-1.744-.87-3.048-.87-.949 0-1.74.228-2.374.686-.64.464-.957 1.029-.957 1.706zm21.439-8.634l-7.802 17.93h-2.411l2.895-6.274-5.13-11.656h2.54l3.707 8.94h.05l3.607-8.94h2.544zM11.003 8.137a5.673 5.673 0 014.009 1.567l2.982-2.982A10.04 10.04 0 0011.004 4a10.449 10.449 0 000 20.897c2.82 0 5.193-.926 6.925-2.522l-.002-.002h.002c1.972-1.818 3.108-4.507 3.108-7.687 0-.712-.06-1.422-.18-2.124h-9.854v4.024h5.644a4.834 4.834 0 01-2.087 3.175v.002c-.937.635-2.145.998-3.557.998-2.725 0-5.038-1.837-5.865-4.313a6.26 6.26 0 010-4c.827-2.475 3.14-4.312 5.865-4.312z" />
+                    </svg>
+                </div>
+            </div>
+
+            <div class="footer-links">
+                <a href="#about">About</a>
+                <a href="#terms">Terms & Conditions</a>
+                <a href="#contact">Contact Us</a>
+            </div>
+
+            <div class="copyright">
+                <p>Copyright © 2024 <strong>Blurgvillage</strong></p>
+                <p>All rights reserved</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/home.js">
+        // Products Data
+
+    </script>
+    <script src="js/nav.js">
+        // Products Data
+
+    </script>
+    <script src="js/mode.js"></script>
+    <script src="js/auth.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>"
