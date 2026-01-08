@@ -135,7 +135,7 @@
             left: 0;
             width: 100%;
             height: 100vh;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background: linear-gradient(135deg, #040405 0%, #262626 100%);
             z-index: 999;
             display: flex;
             justify-content: center;
@@ -224,6 +224,11 @@
             .menu-overlay .nav-links {
                 display: flex;
             }
+            .menu-overlay .nav-links a {
+
+    font-size: 1.1rem;
+
+}
         }
 
         /* Demo Content */
